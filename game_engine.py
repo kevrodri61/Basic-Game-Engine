@@ -27,9 +27,6 @@ spriteAttack = pygame.transform.scale(spriteAttack, (40, 40))
 pygame.display.set_caption("2D Game")
 pygame.display.set_icon(spritePNG)
 
-
-# TEST
-BLUE = (0, 0, 255)
 # Screen Text
 
 font = pygame.font.SysFont(None, 50)
@@ -107,7 +104,6 @@ class Mob(pygame.sprite.Sprite):
         self.image = mobPNG
         self.rect = self.image.get_rect() # Creates Sprite Hitbox using AABB
         self.radius = int(self.rect.width * .9 / 2) # Sprite Collision using CBB
-        pygame.draw.circle(self.image, BLUE, self.rect.center, self.radius)
         # Spawn Coordinates Randomized
         self.rect.x = random.randrange(screen_x - self.rect.width)
         self.rect.y = random.randrange(-100, -40)
