@@ -4,9 +4,9 @@ A basic Game Engine built in Python 3.7 using PyGame.
 ## How It Works
 This Game Engine was built using PyGame. I used the ADT developed in class minus gamepad and sound support.
 
-I've added Sprite Support for Player, Combat, and Mob sprites. All sprite types are classes and more can be created by adding them to the sprite groups. Main player sprite movement is based on vectors and keyboard input so it rotates on movement. Mob Sprites will spawn at the top and off of the screen by default, but that can be edited by changing a few variables. Combat Sprites will spawn directly above the Player Sprite. Collision has the option of using AABB or Circular Bounding Box depending on sprite shape.  All sprites can be scaled up or down to fit your needs. Player sprite is bounded by the window parameters but Enemy Sprites and Attack sprites are not. When enemy sprites go off screen without being hit they will respawn in a random location at the top. Attack sprites will be deleted when they go off screen.
+I've added Sprite Support for Player, Combat, and Mob sprites. All sprite types are classes and more sprites can be created by adding them to the sprite groups. Main player sprite movement is based on vectors and keyboard input so it rotates on movement. Mob Sprites will spawn at the top and off of the screen by default, but that can be edited by changing a few variables. Combat Sprites will spawn directly above the Player Sprite. Collision has the option of using AABB or Circular Bounding Box depending on sprite shape. Player sprite is bounded by the window parameters but Enemy Sprites and Attack sprites are not. When enemy sprites go off screen without being hit they will respawn in a random location at the top. Attack sprites will be deleted when they go off screen. All sprite sizes can be scaled up or down to fit your needs. 
 
-Background, as well as the sprites, can be altered by changing the image load files to a file in the same directory as the game_engine.py file. Background scales to window size by default. 
+Background, as well as the sprites, can be altered by changing the image load lines to a file in the same directory as the game_engine.py file. Background scales to window size by default. 
 
 Window name is set to "2D Game" by default. Window icon is set to your main player sprite icon by default. 
 
